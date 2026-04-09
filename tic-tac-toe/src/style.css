@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.logo {
+  @apply text-4xl font-bold text-center my-4 text-[#F67D31] border-b-4 [border-image:linear-gradient(to_right,#2FA4D7,#F67D31)_1] w-fit mx-auto;
+}
+.box-container {
+  @apply w-full h-[100vh] mt-10 flex flex-col items-center p-4;
+}
+.boxes {
+  @apply grid grid-cols-3 my-4;
+}
+.box {
+  @apply w-30 h-30 text-5xl font-bold border-gray-400 cursor-pointer;
+}
+.result-msg {
+  @apply fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-60 h-40 bg-white rounded-lg flex flex-col gap-4 items-center justify-center shadow-lg text-2xl font-bold mb-4 hidden;
+}

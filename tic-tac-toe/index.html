@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tic-tac-toe</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body class="bg-[#2FA4D7]/30">
+    <h1 class="logo">TIC TA<span class="text-[#2FA4D7]">C TOE</span></h1>
+
+    <div class="box-container">
+        <div class="info text-center text-2xl font-bold mb-4 bg-blue-500 text-white px-4 py-2 rounded-lg cursor-pointer">
+            <p>Player O's Turn</p>
+        </div>
+        <div class="boxes">
+            <!-- Row 1 -->
+            <button class="box border-b-8"></button>
+            <button class="box border-b-8 border-x-8"></button>
+            <button class="box border-b-8"></button>
+
+            <!-- Row 2 -->
+            <button class="box border-b-8"></button>
+            <button class="box border-b-8 border-x-8"></button>
+            <button class="box border-b-8"></button>
+
+            <!-- Row 3 -->
+            <button class="box"></button>
+            <button class="box border-x-8"></button>
+            <button class="box"></button>
+        </div>
+        <div class="result-msg">
+            <p>Player O's win</p>
+            <button class="new-game-btn text-center text-2xl font-bold mb-4 bg-blue-500 text-white px-4 py-2 rounded-lg cursor-pointer">New Game</button>
+        </div>
+        <button class="reset-btn text-center text-2xl font-bold mb-4 bg-blue-500 text-white my-4 px-4 py-2 rounded-lg cursor-pointer">Reset Game</button>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
